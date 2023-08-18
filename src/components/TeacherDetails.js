@@ -30,6 +30,7 @@ const TeacherDetails = () => {
       const data = await response.json();
       console.log(data);
       //setUser([...user, data])
+      console.log(setTeacherDetails)
       
 
       navigate("/dash")

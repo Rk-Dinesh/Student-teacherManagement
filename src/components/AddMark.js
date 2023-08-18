@@ -33,6 +33,7 @@ const AddMark = () => {
       const data = await response.json();
       console.log(data);
       //setUser([...user, data])
+      console.log(setStudentDetails)
 
       navigate("/")
     } catch (error) {
