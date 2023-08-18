@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import {  CardActionArea, CardActions } from "@mui/material";
 
 import { API } from "../api/api";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -12,7 +12,7 @@ import Box from "@mui/material/Box";
 
 const TeacherView = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
+ // const navigate = useNavigate();
   const [teacher, setTeacher] = useState([]);
   useEffect(() => {
     fetch(`${API}/${id}`)
