@@ -24,7 +24,7 @@ const TeacherEdit = () => {
           subject:data.subject
         })
       );
-  }, []);
+  }, [id]);
   const navigate = useNavigate();
   const onEdit = (updated) => {
     fetch(`${API}/${id}`, {

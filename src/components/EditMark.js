@@ -32,7 +32,7 @@ const EditMark = () => {
           math: data.math,
         })
       );
-  }, []);
+  }, [id]);
   const navigate = useNavigate();
   const onEdit = (updatedData) => {
     fetch(`${API}/${id}`, {
